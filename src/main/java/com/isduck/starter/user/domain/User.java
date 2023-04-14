@@ -1,4 +1,4 @@
-package com.isduck.starter.users.domain;
+package com.isduck.starter.user.domain;
 
 import lombok.*;
 
@@ -13,7 +13,7 @@ import java.time.ZonedDateTime;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
 @Builder
-public class Users implements Serializable {
+public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
