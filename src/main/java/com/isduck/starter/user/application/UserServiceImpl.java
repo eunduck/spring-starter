@@ -12,7 +12,6 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Users getUsers(Pageable pageable) {
-        Users users = null;
-        return users;
+        return userService.getUsers(pageable);
     }
 }
