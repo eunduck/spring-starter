@@ -1,5 +1,6 @@
-# spring-starter
-initializr
+# spring-boot
+
+DDD
 
 mysql replication 설계 및 API 개발
 
