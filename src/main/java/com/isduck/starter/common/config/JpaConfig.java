@@ -21,7 +21,6 @@ import java.util.Map;
 @EnableTransactionManagement
 public class JpaConfig {
 
-
     @Bean
     @ConfigurationProperties("spring.jpa")
     public JpaProperties jpaProperties() {
@@ -43,8 +42,7 @@ public class JpaConfig {
         entityManagerFactory.setPersistenceProvider(new HibernatePersistenceProvider());
         entityManagerFactory.setPersistenceUnitName("entityManagerUnit");
         entityManagerFactory.setPackagesToScan(
-                "com.isduck.starter.users.domain"
-//                ,"com.isduck.starter.sample.domain"
+                "com.isduck.starter.user.domain"
         );
 
         HibernateJpaVendorAdapter jpaVendorAdapter = new HibernateJpaVendorAdapter();

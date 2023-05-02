@@ -15,7 +15,7 @@ public class UserDto {
     public static class UserResponse {
         @Schema(description = "회원 id", example = "1")
         private Long id;
-        @Schema(description = "이름", example = "류다은")
+        @Schema(description = "이름", example = "김은덕")
         private String name;
         @Schema(description = "등록일시", example = "yyyy-MM-dd HH:mm:ss")
         private String createdAt;
