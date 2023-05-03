@@ -33,9 +33,6 @@ public class UserReaderImpl implements UserReader {
             predicates.add(
                     builder.like(root.get("name").as(String.class), "%"+userSearchDto.getName()+"%")
             );
-            predicates.add(
-                    builder.like(root.get("email").as(String.class), "%"+userSearchDto.getEmail()+"%")
-            );
 
             return builder.and(predicates.toArray(new Predicate[0]));
         };

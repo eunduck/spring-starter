@@ -11,6 +11,4 @@ import lombok.Setter;
 public class UserSearchDto {
     @Schema(description = "이름(미 입력 시 전체 조회)", nullable = true)
     private String name = "";
-    @Schema(description = "이메일(미 입력 시 전체 조회)", nullable = true)
-    private String email = "";
 }
